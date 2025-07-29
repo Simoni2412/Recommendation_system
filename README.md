@@ -1,7 +1,8 @@
 # Recommendation_system
-Design a recommendation system with ingredient level matching and scoring methods
-Done: 
-Webscraped the data from Moida with fields 
+Design a recommendation system with ingredient level matching and scoring method
+
+
+# 1. Done: Webscraped the data from Moida with fields 
 "name": "",
       "product_url": "https://moidaus.com/products/tocobo-calamine-pore-control-cleansing-oil-200ml",
       "category": "skincare",
