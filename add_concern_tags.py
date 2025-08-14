@@ -70,31 +70,39 @@ def add_concern_tags_to_products(json_file_path: str, output_file_path: str = No
         data = json.load(file)
     
     # Process each product
-    for product in data['products']:
+    total_products = len(data['products'])
+    products_with_concerns = 0
+    
+    for i, product in enumerate(data['products'], 1):
         ingredients = product.get('ingredients', '')
         matching_concerns = find_matching_concerns(ingredients, SKINCARE_INGREDIENTS)
         
         # Add concern tags to the product
         product['concern_tags'] = list(matching_concerns)
         
-        # Print some info for debugging
+        # Print progress and info for debugging
         if matching_concerns:
-            print(f"Product: {product['name']}")
+            products_with_concerns += 1
+            print(f"[{i}/{total_products}] Product: {product['name']}")
             print(f"Concerns: {', '.join(matching_concerns)}")
             print("-" * 50)
+        else:
+            print(f"[{i}/{total_products}] Product: {product['name']} - No concerns matched")
     
     # Save the updated JSON file
     output_path = output_file_path or json_file_path
     with open(output_path, 'w', encoding='utf-8') as file:
         json.dump(data, file, indent=2, ensure_ascii=False)
     
-    print(f"Updated JSON file saved to: {output_path}")
-    print(f"Total products processed: {len(data['products'])}")
+    print(f"\nUpdated JSON file saved to: {output_path}")
+    print(f"Total products processed: {total_products}")
+    print(f"Products with concern tags: {products_with_concerns}")
+    print(f"Products without concern tags: {total_products - products_with_concerns}")
 
 def main():
     """Main function to run the script."""
-    input_file = "moida_final (1).json"
-    output_file = "moida_final_with_concerns.json"
+    input_file = "output_moida_batched.json"
+    output_file = "output_moida_batched_with_concerns.json"
     
     try:
         add_concern_tags_to_products(input_file, output_file)
