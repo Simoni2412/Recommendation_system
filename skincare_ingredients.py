@@ -1,65 +1,68 @@
-"""
-Skincare ingredients dictionary for concern tagging.
-This file contains the mapping of skincare concerns to their associated ingredients.
-"""
-
-SKINCARE_INGREDIENTS = {
+RANKED_SKINCARE_INGREDIENTS = {
     "acne": [
+        "Benzoyl Peroxide",
         "Salicylic Acid",
-        "Benzoyl Peroxide", 
+        "Retinal",
+        "Azelaic Acid",
         "Niacinamide",
         "Tea Tree Oil",
-        "Sulfur",
-        "Azelaic Acid",
         "Zinc PCA",
+        "Sulfur",
+        "Betaine Salicylate",
         "Propolis",
         "Centella Asiatica",
         "Mugwort (Artemisia)",
-        "Betaine Salicylate"
+        "Willow Bark Extract"
     ],
     "hyperpigmentation": [
+        "Retinoids (Retinol, Retinal, Tretinoin)",
         "Vitamin C (Ascorbic Acid)",
+        "Tranexamic Acid",
         "Niacinamide",
         "Alpha Arbutin",
         "Kojic Acid",
         "Licorice Root Extract",
-        "Tranexamic Acid",
-        "Retinoids (Retinol, Retinal, Tretinoin)",
-        "Rice Extract",
-        "Galactomyces Ferment Filtrate",
+        "Glutathione",
         "Arbutin",
-        "Glutathione"
+        "Mandelic Acid",
+        "Bearberry Extract",
+        "Rice Extract",
+        "Galactomyces Ferment Filtrate"
     ],
     "dryness": [
-        "Hyaluronic Acid",
-        "Glycerin",
         "Ceramides",
         "Squalane",
+        "Shea Butter",
+        "Hyaluronic Acid",
+        "Sodium Hyaluronate",
+        "Glycerin",
+        "Beta-Glucan",
         "Panthenol (Vitamin B5)",
         "Urea",
-        "Shea Butter",
-        "Beta-Glucan",
-        "Noni Extract",
         "Royal Jelly",
-        "Sodium Hyaluronate"
+        "Noni Extract",
+        "Jojoba Oil",
+        "Avocado Oil"
     ],
     "oily skin": [
         "Niacinamide",
-        "Zinc",
-        "Clay (Kaolin, Bentonite)",
         "Salicylic Acid",
+        "Clay (Kaolin, Bentonite)",
+        "Zinc",
         "L-Carnitine",
-        "Witch Hazel",
-        "Green Tea Extract"
+        "Green Tea Extract",
+        "Tea Tree Oil",
+        "Witch Hazel"
     ],
     "sensitivity": [
         "Centella Asiatica",
         "Panthenol",
+        "Madecassoside",
         "Allantoin",
         "Colloidal Oatmeal",
+        "Bisabolol",
         "Green Tea Extract",
         "Aloe Vera",
-        "Madecassoside",
         "Mugwort (Artemisia)",
         "Heartleaf (Houttuynia Cordata)"
     ],
@@ -67,63 +70,111 @@ SKINCARE_INGREDIENTS = {
         "Retinoids (Retinol, Retinal, Bakuchiol)",
         "Peptides",
         "Vitamin C",
-        "Niacinamide",
-        "Coenzyme Q10",
         "EGF (Epidermal Growth Factor)",
+        "Coenzyme Q10",
+        "Niacinamide",
         "Fermented Ingredients",
+        "Adenosine",
         "Ginseng Extract",
         "Snail Mucin",
-        "Adenosine",
-        "Retinal"
+        "Alpha Lipoic Acid"
     ],
     "dullness": [
         "Vitamin C",
-        "Niacinamide",
         "AHAs (Glycolic Acid, Lactic Acid)",
-        "Licorice Root",
-        "Fermented Ingredients (Galactomyces, Bifida)",
+        "Niacinamide",
         "PHA (Gluconolactone, Lactobionic Acid)",
-        "Rice Bran Extract"
+        "Fermented Ingredients (Galactomyces, Bifida)",
+        "Licorice Root",
+        "Rice Bran Extract",
+        "Pearl Extract"
     ],
-    "clogged pores": [
+    "blackheads": [
         "Salicylic Acid",
         "Clay",
         "Charcoal",
         "Lactic Acid",
         "PHA (Polyhydroxy Acids)",
+        "Enzymes (Papain, Bromelain)",
         "Willow Bark Extract"
     ],
     "dehydration": [
         "Hyaluronic Acid",
+        "Sodium Hyaluronate",
         "Beta-Glucan",
-        "Aloe Vera",
         "Glycerin",
+        "Aloe Vera",
         "Tremella Mushroom Extract",
-        "Noni Extract",
+        "Seaweed Extract",
         "Propolis",
-        "Sodium Hyaluronate"
+        "Noni Extract"
     ],
     "redness/rosacea": [
         "Azelaic Acid",
         "Centella Asiatica",
-        "Green Tea Extract",
         "Niacinamide",
+        "Green Tea Extract",
         "Allantoin",
         "Bisabolol",
         "Heartleaf (Houttuynia Cordata)",
+        "Beta-Glucan",
         "Mugwort (Artemisia)"
     ],
     "dark circles": [
-        "Caffeine",
-        "Niacinamide",
         "Retinal",
         "Peptides",
+        "Caffeine",
+        "Niacinamide",
         "Vitamin K",
         "Ginseng Extract",
         "Snail Mucin",
+        "Brightening Ferments (like Galactomyces)",
         "Licorice Root",
         "Ceramides",
         "Propolis",
-        "Brightening Ferments (like Galactomyces)"
+        "Haloxyl"
+    ],
+    "uneven texture": [
+        "Glycolic Acid",
+        "Retinol",
+        "Lactic Acid",
+        "PHA (Polyhydroxy Acids)",
+        "Enzymes (Papain, Bromelain)"
+    ],
+    "sun damage": [
+        "Vitamin C",
+        "Niacinamide",
+        "Peptides",
+        "Resveratrol",
+        "Ferulic Acid",
+        "Green Tea Extract",
+        "Sunscreen Filters (Zinc Oxide, Titanium Dioxide)"
+    ],
+    "pores": [
+        "Niacinamide",
+        "Salicylic Acid",
+        "Clay",
+        "Retinal",
+        "PHA",
+        "Witch Hazel"
+    ],
+    "sun protection": [
+        "Zinc Oxide",
+        "Titanium Dioxide",
+        "Tinosorb S (Bemotrizinol)",
+        "Tinosorb M (Bisoctrizole)",
+        "Mexoryl SX (Ecamsule)",
+        "Mexoryl XL (Drometrizole Trisiloxane)",
+        "Uvinul A Plus (Diethylamino Hydroxybenzoyl Hexyl Benzoate)",
+        "Uvinul T 150 (Ethylhexyl Triazone)",
+        "Avobenzone",
+        "Octocrylene",
+        "Homosalate",
+        "Octisalate",
+        "Oxybenzone",
+        "Vitamin E (Tocopherol)",
+        "Resveratrol",
+        "Polypodium Leucotomos Extract",
+        "Green Tea Extract"
     ]
-} 
+}
