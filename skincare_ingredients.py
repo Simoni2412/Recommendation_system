@@ -128,7 +128,6 @@ RANKED_SKINCARE_INGREDIENTS = {
         "Vitamin K",
         "Ginseng Extract",
         "Snail Mucin",
-        "Brightening Ferments (like Galactomyces)",
         "Licorice Root",
         "Ceramides",
         "Propolis",

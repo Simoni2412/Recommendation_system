@@ -364,9 +364,9 @@ if __name__ == "__main__":
         
         # User concerns with percentages
         user_concerns = {
-            "anti-aging": 30,        # Severe acne concern
+            "anti-aging": 60,        # Severe acne concern
             "dark circles": 40,  # Moderate hyperpigmentation
-            "pores": 80,    # Mild dryness
+            "pores": 40,    # Mild dryness
             "acne" : 40,
             "dryness": 50
         }
