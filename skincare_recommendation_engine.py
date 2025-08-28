@@ -364,11 +364,11 @@ if __name__ == "__main__":
         
         # User concerns with percentages
         user_concerns = {
-            "anti-aging": 30,        # Severe acne concern
-            "dark circles": 40,  # Moderate hyperpigmentation
-            "pores": 80,    # Mild dryness
-            "acne" : 40,
-            "dryness": 50
+            "anti-aging": 5,        # Severe acne concern
+            "dark circles": 6,  # Moderate hyperpigmentation
+            "pores": 16,    # Mild dryness
+            #"acne" : 40,
+            #"dryness": 50
         }
 
         suggestions = engine.suggest_concern_corrections(user_concerns)
