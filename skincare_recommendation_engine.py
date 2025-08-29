@@ -32,22 +32,10 @@ class SkincareRecommendationEngine:
             return data["products"]
         except FileNotFoundError:
             print("Warning: output_moida_batched_with_concerns.json not found. Trying alternative file...")
-            try:
-                with open("output_moida_batched.json", "r", encoding="utf-8") as f:
-                    data = json.load(f)
-                return data["products"]
-            except FileNotFoundError:
-                print("Error: No product data file found. Please ensure you have run the concern tagging script first.")
-                return []
+            return []
         except UnicodeDecodeError:
             print("Error: Unicode decoding issue. Trying with different encoding...")
-            try:
-                with open("output_moida_batched_with_concerns.json", "r", encoding="latin-1") as f:
-                    data = json.load(f)
-                return data["products"]
-            except Exception as e:
-                print(f"Error reading file: {e}")
-                return []
+            return []
     
     def get_recommendations(self, user_concerns: Dict[str, float], skin_type: Union[str, None] = None, 
                            budget: Union[str, None] = None, num_recommendations: int = 5) -> List[Dict]:
@@ -353,7 +341,6 @@ if __name__ == "__main__":
     try:
         load_dotenv()
         api_key = os.getenv("API_KEY")
-        print(api_key)
         engine = SkincareRecommendationEngine(api_key=api_key)
         if not engine.products:
             print("Cannot proceed without product data. Please ensure you have run the concern tagging script first.")
