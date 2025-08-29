@@ -48,7 +48,6 @@ class SkincareRecommendationEngine:
             budget: Budget constraint
             num_recommendations: Number of products to recommend
         """
-
         # Get top-scoring products first
         scored_products = self.filter_products_by_concerns(user_concerns, min_score_threshold=5.0)
         if not scored_products:
@@ -116,12 +115,7 @@ class SkincareRecommendationEngine:
                     }
                 }
             )
-            
-            # print(f"API Response received: {response}")
-            # print(f"Response type: {type(response)}")
-            # print(f"Response choices: {response.choices}")
             print(response.output_text)
-
             if response:
                 return self.parse_llm_response(response.output_text)
             else:
@@ -214,8 +208,7 @@ class SkincareRecommendationEngine:
                 "concerns": product.get("concern_tags", [])[:3],  # smaller list
                 "brand": product.get("brand", "")[:30],
                 "price": product.get("price", ""),
-                # drop long ingredient strings, keep only first few
-                "ingredients": ", ".join(product.get("ingredients", "").split(",")[:3])
+                "ingredients": ", ".join(product.get("ingredients", "").split(",")[:3]) # drop long ingredient strings, keep only first few
             }
             product_list.append(product_info)
 
@@ -278,7 +271,6 @@ class SkincareRecommendationEngine:
         Get quick recommendations without LLM (faster, less detailed, no tokens used)
         """
         scored_products = self.filter_products_by_concerns(user_concerns)
-        
         recommendations = []
         for i, (product, score) in enumerate(scored_products[:num_recommendations]):
             rec = {
@@ -286,7 +278,7 @@ class SkincareRecommendationEngine:
                 "brand": product.get("brand", ""),
                 "price": product.get("price", ""),
                 "score": round(score, 2),
-                #"concerns_addressed": product.get("concern_tags", []),
+                "concerns_addressed": product.get("concern_tags", []),
                 "reason": f"High match score ({score:.1f}) for your concerns"
             }
             recommendations.append(rec)
@@ -299,10 +291,6 @@ class SkincareRecommendationEngine:
         for product in self.products:
             concerns = product.get("concern_tags", [])
             all_concerns.update(concerns)
-        
-        # print(f"\nAvailable concern tags in products:")
-        # for concern in sorted(all_concerns):
-        #     print(f"  - {concern}")
         
         return all_concerns
 
@@ -354,7 +342,7 @@ if __name__ == "__main__":
             "anti-aging": 5,        # Severe acne concern
             "dark circles": 6,  # Moderate hyperpigmentation
             "pores": 16,    # Mild dryness
-            #"acne" : 40,
+            "acne" : 40,
             #"dryness": 50
         }
 
@@ -369,16 +357,16 @@ if __name__ == "__main__":
             num_recommendations=5
         )
 
-        print("\nGetting quick recommendations...")
-        quick_recs = engine.get_quick_recommendations(user_concerns, num_recommendations=5)
-        
         print("\nDetailed Recommendations:")
         for i, rec in enumerate(recommendations, 1):
             print(f"{i}. {rec.get('name', 'N/A')}")
             print(f"   Reason: {rec.get('reason', 'N/A')}")
             print(f"   Priority: {rec.get('priority', 'N/A')}")
             print()
-            
+
+        print("\nGetting quick recommendations...")
+        quick_recs = engine.get_quick_recommendations(user_concerns, num_recommendations=5)
+
         print("\nQuick Recommendations:")
         for i, rec in enumerate(quick_recs, 1):
             print(f"{i}. {rec.get('product_name', 'N/A')}")
