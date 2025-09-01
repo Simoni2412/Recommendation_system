@@ -178,14 +178,14 @@ Please provide specific, actionable recommendations that the user can implement 
         """
         prompt = f"""Analyze these skincare ingredients and provide detailed information:
 
-Ingredients: {', '.join(ingredients)}
-
-For each ingredient, provide:
-1. What it does
-2. Benefits for skin
-3. Potential side effects
-
-Format as JSON with ingredient analysis."""
+                    Ingredients: {', '.join(ingredients)}
+                    
+                    For each ingredient, provide:
+                    1. What it does
+                    2. Benefits for skin
+                    3. Potential side effects
+                    
+                    Format as JSON with ingredient analysis."""
 
         try:
             response = self.client.responses.create(
@@ -223,9 +223,11 @@ Format as JSON with ingredient analysis."""
                     }
                 }
             )
-            
-            return self.parse_llm_response(response.output_text)
-            
+            if response:
+                return self.parse_llm_response(response.output_text)
+            else:
+                return [{"error": "No response content received"}]
+
         except Exception as e:
             return {"error": f"Ingredient analysis failed: {str(e)}"}
 
