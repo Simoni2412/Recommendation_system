@@ -51,13 +51,12 @@ class SkincareLLMOnlyEngine:
                                             "product_name": {"type": "string"},
                                             "brand": {"type": "string"},
                                             "category": {"type": "string"},
-                                            "key_ingredients": {"type": "array", "items": {"type": "string"}},
                                             "reason": {"type": "string"},
                                             "priority": {"type": "string"},
                                             "estimated_price": {"type": "string"},
                                             "usage_frequency": {"type": "string"}
                                         },
-                                        "required": ["product_name", "brand", "category", "key_ingredients", "reason",
+                                        "required": ["product_name", "brand", "category", "reason",
                                                      "priority", "estimated_price", "usage_frequency"],
                                         "additionalProperties": False
                                     }
@@ -123,11 +122,9 @@ class SkincareLLMOnlyEngine:
 5. Focus on evidence-based ingredients
 6. Include usage frequency and application tips
 
-**Response Format:**
 Provide recommendations in the exact JSON format specified, including:
 - Product name and brand
 - Product category (cleanser, moisturizer, serum, etc.)
-- Key active ingredients
 - Detailed reasoning for each recommendation
 - Priority level (High/Medium/Low)
 - Estimated price range
@@ -136,11 +133,10 @@ Provide recommendations in the exact JSON format specified, including:
 - Additional skincare tips
 
 Consider the following when making recommendations:
-- Ingredient compatibility
 - Skin type suitability
-- Budget constraints
 - Scientific evidence for effectiveness
 - Potential side effects or contraindications
+- Budget constraints
 
 Please provide specific, actionable recommendations that the user can implement immediately."""
 
@@ -172,65 +168,6 @@ Please provide specific, actionable recommendations that the user can implement 
         except Exception as e:
             return [{"error": f"Parsing error: {str(e)}"}]
 
-    def get_ingredient_analysis(self, ingredients: List[str]) -> Dict:
-        """
-        Get analysis of skincare ingredients using LLM
-        """
-        prompt = f"""Analyze these skincare ingredients and provide detailed information:
-
-                    Ingredients: {', '.join(ingredients)}
-                    
-                    For each ingredient, provide:
-                    1. What it does
-                    2. Benefits for skin
-                    3. Potential side effects
-                    
-                    Format as JSON with ingredient analysis."""
-
-        try:
-            response = self.client.responses.create(
-                model=self.model,
-                instructions="You are a cosmetic chemist and skincare ingredient expert.",
-                input=prompt,
-                text={
-                    "format": {
-                        "type": "json_schema",
-                        "name": "ingredient_analysis",
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "ingredients": {
-                                    "type": "array",
-                                    "items": {
-                                        "type": "object",
-                                        "properties": {
-                                            "name": {"type": "string"},
-                                            "function": {"type": "string"},
-                                            "benefits": {"type": "array", "items": {"type": "string"}},
-                                            "side_effects": {"type": "array", "items": {"type": "string"}},
-                                            "skin_types": {"type": "array", "items": {"type": "string"}},
-                                            "evidence_level": {"type": "string"}
-                                        },
-                                        "required": ["name", "function", "benefits", "side_effects", "skin_types", "evidence_level"],
-                                        "additionalProperties": False
-                                    }
-                                }
-                            },
-                            "required": ["ingredients"],
-                            "additionalProperties": False
-                        },
-                        "strict": True
-                    }
-                }
-            )
-            if response:
-                return self.parse_llm_response(response.output_text)
-            else:
-                return [{"error": "No response content received"}]
-
-        except Exception as e:
-            return {"error": f"Ingredient analysis failed: {str(e)}"}
-
 # Usage example
 if __name__ == "__main__":
     try:
@@ -245,10 +182,11 @@ if __name__ == "__main__":
         
         # Example user concerns
         user_concerns = {
-            "acne": 70,
+            "acne": 30,
             "hyperpigmentation": 40,
-            "aging": 30,
-            "dryness": 20
+            "wrinkles": 30,
+            "dryness": 20,
+            "dark_circles": 16,
         }
         
         print("Getting LLM-only skincare recommendations...")
@@ -268,7 +206,6 @@ if __name__ == "__main__":
                 print(f"\n{i}. {rec.get('product_name', 'N/A')}")
                 print(f"   Brand: {rec.get('brand', 'N/A')}")
                 print(f"   Category: {rec.get('category', 'N/A')}")
-                print(f"   Key Ingredients: {', '.join(rec.get('key_ingredients', []))}")
                 print(f"   Reason: {rec.get('reason', 'N/A')}")
                 print(f"   Priority: {rec.get('priority', 'N/A')}")
                 print(f"   Price: {rec.get('estimated_price', 'N/A')}")
@@ -289,20 +226,7 @@ if __name__ == "__main__":
             for tip in routine.get("additional_tips", []):
                 print(f"  • {tip}")
         
-        # Example ingredient analysis
-        print("\n=== INGREDIENT ANALYSIS EXAMPLE ===")
-        ingredients = ["retinol", "vitamin C", "hyaluronic acid", "niacinamide"]
-        analysis = engine.get_ingredient_analysis(ingredients)
-        
-        if "error" not in analysis:
-            for ingredient in analysis.get("ingredients", []):
-                print(f"\n{ingredient['name'].upper()}:")
-                print(f"  Function: {ingredient['function']}")
-                print(f"  Benefits: {', '.join(ingredient['benefits'])}")
-                print(f"  Side Effects: {', '.join(ingredient['side_effects'])}")
-                print(f"  Best for: {', '.join(ingredient['skin_types'])}")
-                print(f"  Evidence Level: {ingredient['evidence_level']}")
-        
     except Exception as e:
         print(f"An error occurred: {e}")
         print("Please check your API key and ensure it's set in your .env file")
+
