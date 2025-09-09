@@ -163,9 +163,9 @@ class SkincareRecommendationEngine:
                 score += percentage * position_weight
 
                 # Severity bonus, also scaled by rank weight
-                if percentage >= 70:
+                if percentage >= 50:
                     score += 20 * position_weight  # Bonus for severe concerns
-                elif percentage >= 40:
+                elif percentage >= 20:
                     score += 10 * position_weight  # Bonus for moderate concerns
         
         return score
@@ -195,7 +195,7 @@ class SkincareRecommendationEngine:
         concerns_text = []
         for concern, percentage in user_concerns.items():
             if percentage > 0:
-                severity = "H" if percentage >= 40 else "M" if percentage >= 20 else "L"
+                severity = "H" if percentage >= 25 else "M" if percentage >= 10 else "L"
                 concerns_text.append(f"{concern}({severity})")
 
         # Only include top 20 products to save tokens
