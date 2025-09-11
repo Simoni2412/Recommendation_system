@@ -1,6 +1,6 @@
 import json
 import re
-from typing import List, Dict, Set, Tuple
+from typing import List, Dict, Tuple
 from skincare_ingredients import RANKED_SKINCARE_INGREDIENTS
 
 def load_ranked_ingredients(file_path: str = "unique_ingredients_cleaned.txt") -> List[str]:

@@ -100,15 +100,29 @@ class SkincareRecommendationEngine:
                                         "type": "object",
                                         "properties": {
                                             "name": {"type": "string"},
+                                            "brand": {"type": "string"},
+                                            "category": {"type": "string"},
                                             "reason": {"type": "string"},
-                                            "priority": {"type": "string"}
+                                            "priority": {"type": "string"},
+                                            "price": {"type": "string"},
+                                            "usage": {"type": "string"}
                                         },
-                                        "required": ["name", "reason", "priority"],
+                                        "required": ["name", "brand", "category", "reason", "priority", "price", "usage"],
                                         "additionalProperties": False
                                     }
+                                },
+                                "skincare_routine": {
+                                    "type": "object",
+                                    "properties": {
+                                        "morning": {"type": "array", "items": {"type": "string"}},
+                                        "evening": {"type": "array", "items": {"type": "string"}},
+                                        "additional_tips": {"type": "array", "items": {"type": "string"}}
+                                    },
+                                    "required": ["morning", "evening", "additional_tips"],
+                                    "additionalProperties": False
                                 }
                             },
-                            "required": ["recommendations"],
+                            "required": ["recommendations", "skincare_routine"],
                             "additionalProperties": False
                         },
                         "strict": True
@@ -198,7 +212,7 @@ class SkincareRecommendationEngine:
                 severity = "H" if percentage >= 25 else "M" if percentage >= 10 else "L"
                 concerns_text.append(f"{concern}({severity})")
 
-        # Only include top 20 products to save tokens
+        # Only include top 10 products to save tokens
         trimmed_products = top_products[:10]
 
         product_list = []
@@ -212,57 +226,96 @@ class SkincareRecommendationEngine:
             }
             product_list.append(product_info)
 
-            # Shorter, cleaner prompt
-        prompt = f"""Recommend {num_recommendations} skincare products 
-    for user concerns: {', '.join(concerns_text)} | Skin: {skin_type or 'any'} | Budget: {budget or 'any'}.
+        # Comprehensive dermatologist-style prompt
+        prompt = f""" Provide personalized skincare recommendations for a user with the following profile:
+**User Profile:**
+- Primary Concerns: {', '.join(concerns_text)}
+- Skin Type: {skin_type or 'Not specified'}
+- Budget: {budget or 'No specific budget'}
+- Number of recommendations needed: {num_recommendations}
 
-    Products to choose from:
-    {json.dumps(product_list, indent=2)}
+**Requirements:**
+1. Recommend {num_recommendations} specific skincare products that address the user's concerns
+2. Provide a complete skincare routine (morning and evening)
+3. Focus on evidence-based ingredients
+4. Include usage frequency and application tips
 
+**Available Products to Choose From:**
+{json.dumps(product_list, indent=2)}
+
+Provide recommendations in the exact JSON format specified, including:
+- Product name and brand
+- Product category (cleanser, moisturizer, serum, etc.)
+- Detailed reasoning for each recommendation
+- Priority level (High/Medium/Low)
+- Estimated price range
+- Usage frequency
+- Complete morning and evening routine
+- Additional skincare tips
+
+Consider the following when making recommendations:
+- Skin type suitability
+- Potential side effects or contraindications
+
+Please provide specific, actionable recommendations that the user can implement immediately.
+
+{{
+  "recommendations": [
     {{
-      "recommendations": [
-        {{
-          "name": "product name",
-          "reason": "why this product",
-          "priority": "H/M/L"
-        }}
-      ]
+      "name": "product name",
+      "brand": "brand name",
+      "category": "product category",
+      "reason": "detailed reasoning",
+      "priority": "High/Medium/Low",
+      "price": "estimated price",
+      "usage": "usage frequency"
     }}
-    """
+  ],
+  "skincare_routine": {{
+    "morning": ["step 1", 
+                "step 2", 
+                "step 3"],
+    "evening": ["step 1", 
+                "step 2", 
+                "step 3"],
+    "additional_tips": ["tip 1", "tip 2", "tip 3"]
+  }}
+}}"""
         return prompt
 
-    def parse_llm_response(self, response: str) -> List[Dict]:
+    def parse_llm_response(self, response: str) -> Dict:
         """Parse the LLM response into structured data"""
         try:
             # Try strict JSON first
             data = json.loads(response)
-            if "recommendations" in data:
-                return data["recommendations"]
-            else:
-                # Fall back: sometimes the model returns a list directly
-                if isinstance(data, list):
-                    return data
-                # Try to extract JSON substring if the model wrapped text
-                start = response.find('{')
-                end = response.rfind('}')
-                if start != -1 and end != -1 and end > start:
-                    try:
-                        data_inner = json.loads(response[start:end+1])
-                        if "recommendations" in data_inner:
-                            return data_inner["recommendations"]
-                    except Exception:
-                        pass
-                return [{"error": "Invalid response format - missing 'recommendations' key"}]
+            
+            # Extract recommendations
+            recommendations = data.get("recommendations", [])
+            
+            # Extract skincare routine
+            skincare_routine = data.get("skincare_routine", {})
+            
+            # Combine both into a comprehensive result
+            result = {
+                "recommendations": recommendations,
+                "skincare_routine": skincare_routine
+            }
+            
+            return result
+            
         except json.JSONDecodeError as e:
             print(f"JSON parsing error: {e}")
             print(f"Raw response: {response[:200]}...")
             # If the model responded with plain text, return it as a single recommendation reason
             cleaned = response.strip()
             if cleaned:
-                return [{"name": "LLM Output", "reason": cleaned[:500], "priority": "Low"}]
-            return [{"error": f"JSON parsing error: {str(e)}"}]
+                return {
+                    "recommendations": [{"name": "LLM Output", "reason": cleaned[:500], "priority": "Low"}],
+                    "skincare_routine": {"morning": [], "evening": [], "additional_tips": []}
+                }
+            return {"error": f"JSON parsing error: {str(e)}"}
         except Exception as e:
-            return [{"error": f"Parsing error: {str(e)}"}]
+            return {"error": f"Parsing error: {str(e)}"}
 
 
     def get_quick_recommendations(self, user_concerns: Dict[str, float], 
@@ -358,11 +411,42 @@ if __name__ == "__main__":
         )
 
         print("\nDetailed Recommendations:")
-        for i, rec in enumerate(recommendations, 1):
-            print(f"{i}. {rec.get('name', 'N/A')}")
-            print(f"   Reason: {rec.get('reason', 'N/A')}")
-            print(f"   Priority: {rec.get('priority', 'N/A')}")
-            print()
+        if isinstance(recommendations, dict) and "recommendations" in recommendations:
+            # New format with skincare routine
+            recs = recommendations.get("recommendations", [])
+            for i, rec in enumerate(recs, 1):
+                print(f"{i}. {rec.get('name', 'N/A')}")
+                print(f"   Brand: {rec.get('brand', 'N/A')}")
+                print(f"   Category: {rec.get('category', 'N/A')}")
+                print(f"   Reason: {rec.get('reason', 'N/A')}")
+                print(f"   Priority: {rec.get('priority', 'N/A')}")
+                print(f"   Price: {rec.get('price', 'N/A')}")
+                print(f"   Usage: {rec.get('usage', 'N/A')}")
+                print()
+            
+            # Display skincare routine
+            routine = recommendations.get("skincare_routine", {})
+            if routine:
+                print("\n=== SKINCARE ROUTINE ===")
+                
+                print("\nMorning Routine:")
+                for step in routine.get("morning", []):
+                    print(f"  • {step}")
+                
+                print("\nEvening Routine:")
+                for step in routine.get("evening", []):
+                    print(f"  • {step}")
+                
+                print("\nAdditional Tips:")
+                for tip in routine.get("additional_tips", []):
+                    print(f"  • {tip}")
+        else:
+            # Old format (fallback)
+            for i, rec in enumerate(recommendations, 1):
+                print(f"{i}. {rec.get('name', 'N/A')}")
+                print(f"   Reason: {rec.get('reason', 'N/A')}")
+                print(f"   Priority: {rec.get('priority', 'N/A')}")
+                print()
 
         print("\nGetting quick recommendations...")
         quick_recs = engine.get_quick_recommendations(user_concerns, num_recommendations=5)

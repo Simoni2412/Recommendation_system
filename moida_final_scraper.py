@@ -33,8 +33,19 @@ class BatchedMoidaScraper:
         # self.skincare_url is not used for scraping; collections come from Moida/scrape.txt
         self.skincare_url = "https://moidaus.com/collections/skin-care"
         self.session = requests.Session()
-        # Optional: file with comma-separated collection URLs to scrape
-        self.collections_file = os.path.join('Moida', 'scrape.txt')
+
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        env_path = os.getenv('MOIDA_COLLECTIONS_FILE')
+        default_root = os.path.join(os.getcwd(), 'scrape.txt')
+        default_script = os.path.join(script_dir, 'scrape.txt')
+        default_moida = os.path.join(script_dir, 'Moida', 'scrape.txt')
+        for candidate in [env_path, default_root, default_script, default_moida]:
+            if candidate and os.path.exists(candidate):
+                self.collections_file = candidate
+                break
+        else:
+            # Preserve original default if nothing found; may not exist
+            self.collections_file = default_moida
         
         # Ethical scraping headers
         self.session.headers.update({
@@ -67,7 +78,7 @@ class BatchedMoidaScraper:
         # Extend this list over time as needed
         self.known_brands = [
             'COSRX', 'AXIS-Y', 'Axis-Y', 'Tonymoly', 'Beauty of Joseon', 'SKIN1004', 'Skinfood', 'Anua', 'Tocobo',
-            'Beauty Of Joseon', 'Beauty Of JOSEON'
+            'Beauty Of Joseon', 'Beauty Of JOSEON', 'Skin 1004', 'VT-Cosmetics'
         ]
         
     def load_progress(self):
@@ -425,27 +436,47 @@ class BatchedMoidaScraper:
         return unique_products
 
     def load_collection_urls(self, path: Optional[str] = None) -> List[str]:
-        """Load collection URLs from a comma-separated txt file. Falls back to default skincare URL if missing."""
-        file_path = path or self.collections_file
+        """Load collection URLs from a comma/newline separated txt file.
+        Tries multiple candidate paths and logs the resolved file when found.
+        """
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        candidates: List[str] = []
+        if path:
+            candidates.append(path)
+        # Prefer the instance's resolved collections_file
+        candidates.append(getattr(self, 'collections_file', ''))
+        # Also try common locations
+        candidates.append(os.path.join(os.getcwd(), 'scrape.txt'))
+        candidates.append(os.path.join(script_dir, 'scrape.txt'))
+        candidates.append(os.path.join(script_dir, 'Moida', 'scrape.txt'))
+
+        resolved: Optional[str] = None
+        for candidate in candidates:
+            if candidate and os.path.exists(candidate):
+                resolved = candidate
+                break
+
         urls: List[str] = []
+        if not resolved:
+            logger.warning(f"Collections file not found. Tried: {[c for c in candidates if c]}")
+            return urls
+
         try:
-            if os.path.exists(file_path):
-                with open(file_path, 'r', encoding='utf-8') as f:
-                    content = f.read()
-                # Split by comma or newline
-                raw_parts = re.split(r"[,\n]", content)
-                for part in raw_parts:
-                    u = part.strip()
-                    if not u:
-                        continue
-                    # Normalize to absolute URL if needed
-                    if not u.startswith('http'):
-                        u = urljoin(self.base_url, u)
-                    urls.append(u)
-            else:
-                logger.warning(f"Collections file not found: {file_path}")
+            logger.info(f"Loading collection URLs from: {resolved}")
+            with open(resolved, 'r', encoding='utf-8') as f:
+                content = f.read()
+            # Split by comma or newline
+            raw_parts = re.split(r"[,\n]", content)
+            for part in raw_parts:
+                u = part.strip()
+                if not u:
+                    continue
+                # Normalize to absolute URL if needed
+                if not u.startswith('http'):
+                    u = urljoin(self.base_url, u)
+                urls.append(u)
         except Exception as e:
-            logger.warning(f"Failed to load collection URLs from {file_path}: {e}")
+            logger.warning(f"Failed to load collection URLs from {resolved}: {e}")
         return urls
 
     def derive_category_from_collection_url(self, url: str) -> str:
