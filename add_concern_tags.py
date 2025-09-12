@@ -58,6 +58,7 @@ def find_matching_concerns_with_ranking(ingredients: str, skincare_ingredients: 
     concern_scores = {}  # concern -> best_priority_score
     
     for concern, concern_ingredients in skincare_ingredients.items():
+        best_score = float('inf')
         for concern_ingredient in concern_ingredients:
             normalized_concern_ingredient = normalize_ingredient(concern_ingredient)
             
@@ -147,7 +148,7 @@ def add_concern_tags_to_products(json_file_path: str, output_file_path: str = No
 def main():
     """Main function to run the script."""
     input_file = "output_moida_batched.json"
-    output_file = "output_moida_batched_with_concerns.json"
+    output_file = "new_with_concerns.json"
     
     try:
         add_concern_tags_to_products(input_file, output_file)

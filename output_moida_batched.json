@@ -1,10 +1,10 @@
 {
   "scraper_info": {
-    "scraped_at": "2025-09-11T12:52:36.022212",
+    "scraped_at": "2025-09-11T20:02:41.493885",
     "source_urls": [
       "https://moidaus.com/collections/arencia"
     ],
-    "total_products": 203,
+    "total_products": 208,
     "scraper_version": "1.0.0",
     "enhanced_features": [
       "Batched scraping (10 products per category)",
@@ -18,10 +18,10 @@
       "Shopify-based website support"
     ],
     "scraping_stats": {
-      "total_scraped_this_run": 10,
-      "products_with_images_this_run": 10,
-      "total_products_all_runs": 203,
-      "previously_scraped_urls": 406
+      "total_scraped_this_run": 5,
+      "products_with_images_this_run": 5,
+      "total_products_all_runs": 208,
+      "previously_scraped_urls": 416
     }
   },
   "products": [
@@ -3795,6 +3795,104 @@
         "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/4_03655bb4-a56f-464e-941e-44364704463c.jpg?v=1752476487",
         "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/5_49a59c70-d501-4b35-a203-d86280a45610.jpg?v=1752476487",
         "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/6_24eb0d5f-be0c-4f56-a2dc-9a21893cbb27.jpg?v=1752476487"
+      ]
+    },
+    {
+      "name": "[Arencia] Green Tea LHA Deep Pore Rice Cake Cleanser 150ml",
+      "product_url": "https://moidaus.com/products/arencia-green-tea-lha-deep-pore-rice-cake-cleanser-150ml",
+      "category": "arencia",
+      "brand": "Arencia",
+      "vendor": "Arencia",
+      "scraped_at": "2025-09-11T19:48:16.409639",
+      "image_url": "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/Untitleddesign_72_338cecae-8689-4099-92da-830b1a97e8ef.png?v=1752115142",
+      "price": "$17.00",
+      "detailed_description": "Description\n- A facial cleanser contains LHA that helps exfoliate blackheads and dead skin cells and enhance the skin texture. - Formulated with Green Tea Extract that helps soothe irritated skin, control sebum, and replenish moisture to the skin. - Enriched with Bakuchiol, which contains antioxidant properties that help tighten pores and revitalize the skin. - The rice cake-like formula gently adheres and removes impurities in the pores to deliver thorough cleansing.",
+      "ingredients": "Glycerin, Xanthan Gum, Hydroxypropyl Starch Phosphate, Polyquaternium-67, Water, Disodium EDTA, Sodium Cocoyl Isethionate, Coconut Acid, Sodium Isethionate, Water, Sodium Cocoyl Glycinate, Glyceryl Stearate, Allantoin, Panthenol, Salicylic Acid, 1,2-Hexanediol, Ethylhexylglycerin, Theobroma Cacao (Cocoa) Seed Extract, Dextrin, Gardenia Florida Fruit Extract, Dextrin, Gardenia Florida Fruit Extract, Dextrin, Capryloyl Salicylic Acid, Water, Camellia Sinensis Leaf Extract, 1,2-Hexanediol, Water, 1,2-Hexanediol, Vigna Radiata Seed Extract, Water, 1,2-Hexanediol, Hyssopus Officinalis Extract, Ethylhexylglycerin, Bakuchiol, Prunus Amygdalus Dulcis (Sweet Almond) Seed Meal, Rosmarinus Officinalis Leaf Oil, Houttuynia Cordata Powder, Prunus Armeniaca (Apricot) Kernel Oil, Water, Butylene Glycol, Asparagus Officinalis Extract, Water, Butylene Glycol, Oryza Sativa (Rice) Lees Extract",
+      "main_image": "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/Untitleddesign_72_338cecae-8689-4099-92da-830b1a97e8ef.png?v=1752115142",
+      "additional_images": [
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/191746781213175afbc9c58a487.jpg?v=1752115142",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/1817467812169024f1713a41687.jpg?v=1752115142",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/171746781220310eebb351f8352.jpg?v=1752115142",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/1617467812234189c826e7ae867.jpg?v=1752115142",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/7KCc66qp7J2E7J6F66Cl7ZW07KO87IS47JqU_00120250220T142657.027.jpg?v=1752115142"
+      ]
+    },
+    {
+      "name": "[Arencia] Holy Hyssop Sheet Mask (5ea)",
+      "product_url": "https://moidaus.com/products/arencia-holy-hyssop-sheet-mask-5ea",
+      "category": "arencia",
+      "brand": "Arencia",
+      "vendor": "Arencia",
+      "scraped_at": "2025-09-11T19:48:29.103715",
+      "image_url": "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/Untitleddesign_70_2476a694-0a11-4fb1-a831-adceb112f3bc.png?v=1752115790",
+      "price": "$18.00",
+      "detailed_description": "Description\n- Moisturizing sheet masks that revitalizes and restore glow to dry and dull skin. - Formulated with hyssop extract that is rich in Vitamin A, C, and E that offers pore care and help improve skin texture. - Contains Niacinamide exclusive Vita ACE Complex ingredients with high content of vitamins that boost skin brightness and glow. - Vegan Cellulose mask sheets that adhere to and hug skin perfectly.",
+      "ingredients": "Water, Butylene Glycol, Glycerin, Dipropylene Glycol, Niacinamide, 1,2-Hexanediol, Hydroxyacetophenone, Carbomer, Sodium Polyacrylate, Tromethamine, Glyceryl Acrylate/Acrylic Acid Copolymer, Adenosine, Xanthan Gum, PVM/MA Copolymer, Melia Azadirachta Leaf Extract, Sodium Hyaluronate, Hyssopus Officinalis Extract, Melia Azadirachta Flower Extract, Ethylhexylglycerin,3-O-Ethyl Ascorbic Acid, Sodium Ascorbyl Phosphate, Ascorbic Acid, Ascorbyl Glucoside, Tocopherol, Panthenol, Pyridoxine,Corchorus Olitorius Leaf Extract, Angelica Keiskei Extract, Nelumbo Nucifera Root Extract, Hibiscus Esculentus Fruit Extract, Dioscorea Japonica Root Extract, Linum Usitatissimum (Linseed) Seed Extract, Oryza Sativa (Rice) Extract, Hydrogenated Lecithin, Ceramide NP, Glycosphingolipids, Acetyl Hexapeptide-8, Copper Tripeptide-1, Sodium Hyaluronate Crosspolymer, Potassium Hyaluronate, Hydroxypropyltrimonium Hyaluronate, Hydrolyzed Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Hyaluronic Acid, Pentylene Glycol, Sodium Acetylated Hyaluronate, Palmitoyl Pentapeptide-4, Oligopeptide-1, Oligopeptide-2",
+      "main_image": "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/Untitleddesign_70_2476a694-0a11-4fb1-a831-adceb112f3bc.png?v=1752115790",
+      "additional_images": [
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/Untitleddesign_71_811235ee-761f-4c86-aac1-9166e1de076d.png?v=1752115790",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/Untitleddesign_75_c664ba92-354b-4dbf-9ca0-71f80e3a74fa.png?v=1752115790",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/Untitleddesign_72_29d3711b-6d42-4c7d-8dde-42cb2a034d03.png?v=1752115790",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/Untitleddesign_73_7d3837f9-7093-4e46-a8de-7bee5ad2d613.png?v=1752115790",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/Untitleddesign_74_75da0128-972e-4545-8814-651e249e66c3.png?v=1752115790"
+      ]
+    },
+    {
+      "name": "[Arencia] Deep Water Surge Serum 30 50ml",
+      "product_url": "https://moidaus.com/products/arencia-deep-water-surge-serum-30-50ml-1",
+      "category": "arencia",
+      "brand": "Arencia",
+      "vendor": "Arencia",
+      "scraped_at": "2025-09-11T19:48:41.799379",
+      "image_url": "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/Untitleddesign_94_39113bb8-f722-4fe8-9de5-3a51dcd0b406.png?v=1752322689",
+      "price": "$31.50",
+      "detailed_description": "Description\nBlue Line (Hydration + Soothing)Hydration Charging Serum (High Viscosity Texture)-Thicker than dropper-type serums-Rich texture, deep adherence-Long-lasting hydration-Soothes and protects sensitive skinTransparent moisture coating / Hydration charge / Moisture barrier / Soothing / Healthy glow / Inner dryness relief / Deep hydration / Tightness relief",
+      "ingredients": "Triple hyaluronic acid delivers moisture to every layer of the skin with molecules of varying sizes, building a strong hydration barrier from the surface to deep within. Plant-based PDRN soothes sensitive skin and supports its natural regeneration, helping to restore firmness and resilience. Licorice extract is rich in antioxidants, helping to protect the skin from environmental stressors while gently soothing sensitive or irritated skin. Squalane, a deeply hydrating ingredient with a structure similar to the skin’s natural lipids, absorbs quickly to deliver lasting moisture and nourishment, leaving the skin soft, smooth, and supple.",
+      "main_image": "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/Untitleddesign_94_39113bb8-f722-4fe8-9de5-3a51dcd0b406.png?v=1752322689",
+      "additional_images": [
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/11117467815365348e61a36a739a.jpg?v=1752322689",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/Untitleddesign11747890176227135692f90b2d.jpg?v=1752322689",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/371746781550843c1abbb0a5c6b.jpg?v=1752322689",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/4717467815543997fc57f96b938.jpg?v=1752322689",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/KakaoTalk_20250620_180328310_031750571617802722f6ab4b75c.png?v=1752322689"
+      ]
+    },
+    {
+      "name": "[Arencia] Deep Water Surge Serum 30ml",
+      "product_url": "https://moidaus.com/products/arencia-deep-water-surge-serum-30ml-1",
+      "category": "arencia",
+      "brand": "Arencia",
+      "vendor": "Arencia",
+      "scraped_at": "2025-09-11T19:48:54.512465",
+      "image_url": "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/1_62a9dc7c-fcfd-42fa-b310-0afa34bcbdcc.jpg?v=1752573422",
+      "price": "$19.80",
+      "detailed_description": "Description\n- A hydrating serum that deeply moisturize skin for a healthy glow.- Formulated with Ceramide, Panthenol, and plant-based PDRN ingredients for moisture barrier protection and soothing benefits.- Contains 3 types of Hyaluronic Acid with different molecular weights to deliver hydration to the deep layers of skin.- Lightweight formula that does not leave the skin feeling sticky.",
+      "ingredients": "Water, Propanediol, Glycereth-26, Glycerin, Sodium Hyaluronate, Niacinamide, 1,2-Hexanediol, Butylene Glycol, Ethylhexylglycerin, Polyglyceryl-10 Myristate, Adenosine, Polyglyceryl-10 Laurate, Dextrin, Panthenol, Betaine, Gardenia Florida Fruit Extract, Camellia Sinensis Leaf Extract, Oryza Sativa (Rice) Lees Extract, Aloe Barbadensis Extract, Salix Alba (Willow) Extract, Melissa Officinalis Extract, Vaccinium Angustifolium (Blueberry) Fruit Extract, Glyceryl Acrylate/Acrylic Acid Copolymer, PVM/MA Copolymer, Caprylic/Capric Triglyceride, Hydrogenated Lecithin, Polyglyceryl-10 Oleate, Ceramide NP, Hydrolyzed DNA, Copper Tripeptide-1, Acetyl Hexapeptide-8, Glycosphingolipids, Sodium Ascorbyl Phosphate, Potassium Hyaluronate, Sodium Hyaluronate Crosspolymer, Hydroxypropyltrimonium Hyaluronate, Hydrolyzed Hyaluronic Acid, Hyaluronic Acid, Hydrolyzed Sodium Hyaluronate, Disodium EDTA, Pentylene Glycol, Palmitoyl Pentapeptide-4, Sodium Acetylated Hyaluronate, Tripeptide-1, Palmitoyl Tripeptide-1, Oligopeptide-1 , Oligopeptide-2, Palmitoyl Tetrapeptide-7, Hexapeptide-9",
+      "main_image": "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/1_62a9dc7c-fcfd-42fa-b310-0afa34bcbdcc.jpg?v=1752573422",
+      "additional_images": [
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/22_c75002af-1772-4337-aa4d-28f462a54183.jpg?v=1752573422",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/33_3d7e8066-1c62-4418-ba38-71add86104e9.jpg?v=1752573422",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/44_13fe3ac5-e3d3-490b-9f60-a7f09aafc36a.jpg?v=1752573423",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/55_4577740d-1767-4ffd-bdb0-b7967289aec5.jpg?v=1752573423",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/66_569efd4b-1637-4b97-9a73-d6361321d2dc.jpg?v=1752573423"
+      ]
+    },
+    {
+      "name": "[Arencia] Fresh Red Smoothie Serum 30 50ml",
+      "product_url": "https://moidaus.com/products/arencia-fresh-red-smoothie-serum-30-50ml-2",
+      "category": "arencia",
+      "brand": "Arencia",
+      "vendor": "Arencia",
+      "scraped_at": "2025-09-11T19:49:07.315884",
+      "image_url": "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/arenciaredsmoothieserum3050g-2-dd7cf58eeef48d9a6e17474516366548-1024-1024.webp?v=1753950823",
+      "price": "$31.50",
+      "detailed_description": "Description\n- A serum that helps boosts Collagen production, minimizes the appearance of pores, and enhances skin elasicity while reducing wrinkles for smoother complextion.- Features 30% Red Collagen Complex to help improve skin elasticity and Rosehip Extract enriched in Vitamin C (60 times more than lemons) that helps brighten up the skin tone and improve overall complexion.- Contains Hibiscus Sabdariffa Flower Extract for antioxidants, and Niacinamide that supports shrink pores while reducing the inflammation.- The jelly-like formula with a lightweight texture delivers intense nourishment and hydration deep into the skin.",
+      "ingredients": "Water, Glycerin, Niacinamide, Arbutin, Propanediol, 1, 2-Hexanediol, Butylene Glycol, Methylpropanediol, Ammonium Acryloyldimethyltaurate/VP Copolymer, Acrylates/C10-30, Alkyl Acrylate Crosspolymer, Arginine, Gardenia Florida Fruit Extract, Ethylhexylglycerin, Dextrin, Adenosine, Polyglyceryl-10 Myristate, Polyglyceryl-10 Laurate, Panax Ginseng Berry Extract, Glyceryl Acrylate/Acrylic Acid Copolymer, Persea Gratissima (Avocado) Fruit Extract, Ribes Nigrum (Black Currant) Fruit Extract, Inonotus Obliquus (Mushroom) Extract, Brassica Oleracea Acephala Leaf Extract, PVM/MA Copolymer, Saccharomyces/Rice Ferment Filtrate, Sodium Hyaluronate, Ferulic Acid, Beta Vulgaris (Beet) Root Extract, Vaccinium Vitis-Idaea Fruit Extract, Rosa Gallica Flower Extract, Hibiscus Sabdariffa Flower Extract, Rosa Canina Fruit Extract, Hexapeptide-2, Soluble Collagen, Hydrolyzed DNA, Biotin, 3-O-Ethyl Ascorbic Acid, Sodium Ascorbyl Phosphate, Ascorbic Acid, Ascorbyl, Glucoside, Tocopherol, Panthenol, Pyridoxine",
+      "main_image": "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/arenciaredsmoothieserum3050g-2-dd7cf58eeef48d9a6e17474516366548-1024-1024.webp?v=1753950823",
+      "additional_images": [
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/2_6bb4a97d-4389-4fdb-92cf-e81a6846abae.png?v=1753950823",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/4_38bd4dfc-09b1-4730-a7ef-d6bdd45ae90a.png?v=1753950823",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/5_fac1a85b-f4b9-4f97-959a-63d6faf52100.png?v=1753950823"
       ]
     }
   ]
