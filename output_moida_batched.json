@@ -1,23 +1,10 @@
 {
   "scraper_info": {
-    "scraped_at": "2025-09-11T12:36:26.655091",
+    "scraped_at": "2025-09-11T12:52:36.022212",
     "source_urls": [
-      "https://moidaus.com/collections/anua",
-      "https://moidaus.com/collections/arencia",
-      "https://moidaus.com/collections/beauty-of-joseon",
-      "https://moidaus.com/collections/biodance",
-      "https://moidaus.com/collections/dr-althea",
-      "https://moidaus.com/collections/mary-may",
-      "https://moidaus.com/collections/medicube",
-      "https://moidaus.com/collections/mixsoon",
-      "https://moidaus.com/collections/mixsoon",
-      "https://moidaus.com/collections/purito-seoul",
-      "https://moidaus.com/collections/round-lab",
-      "https://moidaus.com/collections/skin1004",
-      "https://moidaus.com/collections/tocobo",
-      "https://moidaus.com/collections/vt-cosmetics"
+      "https://moidaus.com/collections/arencia"
     ],
-    "total_products": 193,
+    "total_products": 203,
     "scraper_version": "1.0.0",
     "enhanced_features": [
       "Batched scraping (10 products per category)",
@@ -33,8 +20,8 @@
     "scraping_stats": {
       "total_scraped_this_run": 10,
       "products_with_images_this_run": 10,
-      "total_products_all_runs": 193,
-      "previously_scraped_urls": 386
+      "total_products_all_runs": 203,
+      "previously_scraped_urls": 406
     }
   },
   "products": [
@@ -3605,6 +3592,209 @@
         "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/3_e02d8539-aaf4-496c-a72d-ebdea79e9624.png?v=1749023302",
         "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/4_4915133e-7345-4f11-af05-c0b89674443e.png?v=1749023302",
         "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/5_6f9e47a7-b111-401b-abe5-567e606ee73b.png?v=1749023302"
+      ]
+    },
+    {
+      "name": "[Arencia] Blue Hyssop Cleanser 120ml (+FREE GIFT / Holy Hyssop Serum 4ML)",
+      "product_url": "https://moidaus.com/products/arencia-blue-hyssop-cleanser-120ml",
+      "category": "arencia",
+      "brand": "Arencia",
+      "vendor": "Arencia",
+      "scraped_at": "2025-09-11T12:42:21.137098",
+      "image_url": "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/00044_copy.jpg?v=1748480089",
+      "price": "$23.00",
+      "detailed_description": "Description\n\nThis purifying cleanser gently yet effectively removes makeup residue and fine dust from pores, leaving the skin refreshed and hydrated while maintaining its natural moisture balance. Its formula is clinically proven to help with normal to oily skin.\nKneaded over 1,000 times and made with more than 20 plant-based ingredients through a 170-hour fermentation process, this product features Arencia’s signature mochi-like texture.\nUtilize it as both a clay mask and cleanser to take full advantage of its benefits.",
+      "ingredients": "Glycerin, purified water, sodium cocoyl isethionate, sweet almond seed cake, sodium cocoyl glycinate, coconut acid, 1,2-hexanediol, sodium methyl cocoyl taurate, rice flour, flavoring, kaolin, sodium isethionate, glyceryl stearate, hydroxypropyl starch phosphate, xanthan gum, sodium chloride, dextrin, ethylhexylglycerin, gardenia extract, green tea extract, hyssop extract",
+      "main_image": "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/00044_copy.jpg?v=1748480089",
+      "additional_images": [
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/00253_copy.jpg?v=1748480089",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/250227___Page_01_re_jpg_d58e0da8-08b5-4cec-a006-f0a8fab000db.jpg?v=1748480089",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/NEW_____04_png_2248fe4f-29bd-4513-9760-8f23939c67dc.png?v=1748480089",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/123gds.png?v=1748480089"
+      ]
+    },
+    {
+      "name": "[Arencia] L'aromatique Calendula Cleanser 120ml (+FREE GIFT / Holy Hyssop Serum 4ML)",
+      "product_url": "https://moidaus.com/products/arencia-laromatique-calendula-cleanser-120ml",
+      "category": "arencia",
+      "brand": "Arencia",
+      "vendor": "Arencia",
+      "scraped_at": "2025-09-11T12:42:33.975440",
+      "image_url": "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/L_AROMATIQUE_CALENDULA_CLEANSER_c0139a06-f3bc-4380-bea4-af0c0314977a.jpg?v=1748481658",
+      "price": "$23.00",
+      "detailed_description": "Description\n\nFor all skin type. Gentle deep-cleanser that brightens and purifies the skin with natural calendula extract. \nArencia Rosehip Rice Mochi Cleanser is a cult-favorite cleanser, infused with natural ingredients like calendula extract, natural oils, and vitamins. \nEffectively deep cleanses by removing excess oil and impurities from the skin [DEFENDS AGAINST 5 SIGNS OF SKIN SENSITIVITY] Dryness, irritation, roughness, tightness and a weakened skin barrier[INFUSED WITH 34 NATURAL EXTRACTS] No distilled water added but filled with 34 natural ingredient extracts that helps protect the skin’s moisture barrier and prevents dryness.[NO NEED FOR DOUBLE CLEANSING] Removes face and eye makeup, dirt, and impurities.",
+      "ingredients": "Glycerin, Water, Sodium Cocoyl Isethionate, Sodium Cocoyl Glycinate, Prunus Amygdalus Dulcis (Sweet Almond) Seed Meal, 1,2-Hexanediol, Coconut Acid, Sodium Methyl Cocoyl Taurate, Cellulose, Oryza Sativa (Rice) Powder, Sodium Isethionate, Pyrus Malus (Apple) Fiber, Hamamelis Virginiana (Witch Hazel) Extract, Glyceryl Stearate, Hydroxypropyl Starch Phosphate, Sodium Chloride, Xanthan Gum, Fragrance, Gardenia Florida Fruit Extract, Ethylhexylglycerin, Dextrin, Disodium EDTA, Calendula Officinalis Extract (1ppm), Houttuynia Cordata Extract, Opuntia Ficus Indica Stem Extract.",
+      "main_image": "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/L_AROMATIQUE_CALENDULA_CLEANSER_c0139a06-f3bc-4380-bea4-af0c0314977a.jpg?v=1748481658",
+      "additional_images": [
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/L_AROMATIQUE_CALENDULA_CLEANSER_3_21da349b-aa4a-48f1-b26a-675167e074b2.jpg?v=1748481658",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/L_AROMATIQUE_CALENDULA_CLEANSER_4_5cdb0e53-dc92-400f-9e25-53b7bb49cea7.jpg?v=1748481658",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/L_AROMATIQUE_CALENDULA_CLEANSER_2.jpg?v=1748481658",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/250227___Page_01_re_jpg_7ca3d855-7970-4f0f-bc58-fba3653f3266.jpg?v=1748481658",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/agsgdsagd.png?v=1748481658"
+      ]
+    },
+    {
+      "name": "*DEAL*[Arencia] Fresh Royal Rosehip Cleanser 120ml (+FREE GIFT / Holy Hyssop Serum 4ML)",
+      "product_url": "https://moidaus.com/products/arencia-fresh-royal-rosehip-cleanser-120ml",
+      "category": "arencia",
+      "brand": "Arencia",
+      "vendor": "Arencia",
+      "scraped_at": "2025-09-11T12:42:46.739478",
+      "image_url": "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/03_f89960a2-6788-4148-850a-01c2335861d9.jpg?v=1748480170",
+      "price": "$9.00",
+      "detailed_description": "Description\n- A moisturizing cleanser that cleanse while softening and soothing skin with a dough-like texture.- Made with 170 hours of repeated grinding, rubbing, and pressing of the raw ingredients with ASDT method for a dense and bouncy dough-like texture.- Contains rosehip extract that is rich in various types of vitamins to nourish skin and pink aloe vera and blue german chamomile ingredients to hydrate skin and provide antioxidant benefits.- Enriched with finely milled almond powder to gently and mildly exfoliate skin.- Mask pack and cleanser 2-in-1 product that helps balance skin's oil and water levels.",
+      "ingredients": "Glycerin, Sodium Cocoyl Isethionate, Water, Sodium Cocoyl Glycinate, Prunus Amygdalus Dulcis (Sweet Almond) Seed Powder, Aloe Barbadensis Leaf Extract, Rosa Canina Fruit Extract, Chamomilla Recutita (Matricaria) Extract, 1,2-Hexanediol, Coconut Acid, Sodium Methyl Cocoyl Taurate, Cellulose, Oryza Sativa (Rice) Powder, Sodium Isethionate, Pyrus Malus (Apple) Fiber, Glyceryl Stearate, Hydroxypropyl Starch Phosphate, Propanediol, Sodium Chloride, Xanthan Gum, Gardenia Florida Fruit Extract, Dextrin, Fragrance, Caprylyl Glycol, Ethylhexylglycerin, Disodium Edta, Sodium Cocoyl Apple Amino Acids, Hexylene Glycol, Tetrasodium Glutamate Diacetate.",
+      "main_image": "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/03_f89960a2-6788-4148-850a-01c2335861d9.jpg?v=1748480170",
+      "additional_images": [
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/02_8b24fdf0-1711-478a-8660-f06f3791e657.jpg?v=1748480170",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/04_2cbe1812-c3b0-469b-842d-c612fb2d8c11.jpg?v=1748480170",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/01_19d4fac2-57e7-4257-81e4-66e384480447.jpg?v=1748480170",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/sgasg.png?v=1748480170",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/asggssdg.png?v=1748480170",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/regagsag.png?v=1748480170"
+      ]
+    },
+    {
+      "name": "[Arencia] Black Tea & Yuzu Cleanser 120ml (+FREE GIFT / Holy Hyssop Serum 4ML)",
+      "product_url": "https://moidaus.com/products/arencia-fresh-royal-rosehip-cleanser-120ml%EC%82%AC%EB%B3%B8",
+      "category": "arencia",
+      "brand": "Arencia",
+      "vendor": "Arencia",
+      "scraped_at": "2025-09-11T12:42:59.491411",
+      "image_url": "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/02_00e4a4fa-6091-4422-a924-c66d957f2d6c.jpg?v=1748480003",
+      "price": "$23.00",
+      "detailed_description": "Description\nInfused with Black tea extract and vibrant Yuzu fruit, this formula effectively sweeps away excess oil and impurities while replenishing moisture, leaving skin balanced and refreshed. The cleanser’s unique 170-hour freshening process ensures a potent infusion of hydration and nutrition, gently lifting away dead skin cells and unveiling a natural, healthy glow.\nWhat begins as a scrub-like texture seamlessly melts into a creamy consistency upon contact with water, delivering a spa-like experience in the comfort of your home. Enriched with plant-derived ingredients, this multitasking formula provides soft, supple skin with a radiant finish after every use.\nDesigned to nourish, polish, and illuminate, it’s your key to effortlessly radiant skin. Suitable for all skin types",
+      "ingredients": "Glycerin, Water, Sodium Cocoyl lsethionate, Prunus Amygdalus Dulcis (Sweet Aimond) Seed Meal, Sodium Cocoyl Glycinate, Charcoal Powder, Coconut Acid, Sodium Methyi Cocoyl Taurate, 1,2-Hexanediol, Kaolin, Sodium Isethionate, Glyceryl Stearate, Hydroxypropyl Starch Phosphate, Citrus Limon (Lemon) Peel Oil, Sodium Chloride, Xanthan Gum, Limonene, Ethyihexyiglycerin, Butylene Glycol, Citrus Junos Fruit Extract (300ppm), Camellia Sinensis Leaf Extract(10ppm).",
+      "main_image": "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/02_00e4a4fa-6091-4422-a924-c66d957f2d6c.jpg?v=1748480003",
+      "additional_images": [
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/BLACK_TEA_YUZU_CLEANSER__1.jpg?v=1748480003",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/BLACK_TEA_YUZU_CLEANSER__2.jpg?v=1748480003",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/BLACK_TEA_YUZU_CLEANSER__3.jpg?v=1748480003",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/BLACK_TEA_YUZU_CLEANSER__5.jpg?v=1748480003",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/1_01b8fae3-a9cd-4118-b0fd-b0a27b2d9ba6.jpg?v=1748480003",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/1_c910437c-5835-47ee-b757-8e572773ca09.jpg?v=1748480003"
+      ]
+    },
+    {
+      "name": "[Arencia] Rice Mucin Cleanser 120ml (+FREE GIFT / Holy Hyssop Serum 4ML)",
+      "product_url": "https://moidaus.com/products/arencia-rice-mucin-cleanser-120ml",
+      "category": "arencia",
+      "brand": "Arencia",
+      "vendor": "Arencia",
+      "scraped_at": "2025-09-11T12:43:12.404849",
+      "image_url": "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/RICEMUCINCLEANSER.jpg?v=1747900716",
+      "price": "$20.00",
+      "detailed_description": "Description\n \n\nInspired by the soft and bouncy texture of mochi, Arencia’s exclusive formula ensures a hydrating cleanse without stripping the skin of its natural moisture.\nUpgrade your cleansing routine with Arencia Rice Mucin Cleanser for radiant, hydrated, and refreshed skin every day! 🌿✨",
+      "ingredients": "",
+      "main_image": "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/RICEMUCINCLEANSER.jpg?v=1747900716",
+      "additional_images": [
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/8800276315400_1.png?v=1747901082",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/8800276315400_2.png?v=1747901082",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/8800276315400_3.png?v=1747901082",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/8800276315400_4.png?v=1747901082",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/8800276315400_08a7736f-7282-41c4-aab2-c64ad3b42c1c.png?v=1747901082"
+      ]
+    },
+    {
+      "name": "[Arencia] Holy Hyssop Serum 30 50ml (+FREE GIFT / Holy Hyssop Serum 4ML)",
+      "product_url": "https://moidaus.com/products/arencia-holy-hyssop-serum-30-50ml",
+      "category": "arencia",
+      "brand": "Arencia",
+      "vendor": "Arencia",
+      "scraped_at": "2025-09-11T12:43:25.143451",
+      "image_url": "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/1_a3e19193-d8c1-4c44-aa91-080a0f4ef203.jpg?v=1752476465",
+      "price": "$31.50",
+      "detailed_description": "Description\nThis serum is designed to brighten skin tone, smooth fine lines, and tackle discoloration effectively. Enriched with peptides, niacinamide, and hyssop extract, it deeply moisturizes and nourishes the skin.Our formula is proven to fade dark spots and post-acne hyperpigmentation while also preventing new ones from appearing. Featuring excellent moisturizing properties and a lightweight, non-greasy texture, it effortlessly blends with any cream or lotion.Study conducted by the Korea Dermatology Research Institute, 20 participants ranging in age from 35-59, 2 weeks of using the product- 100.86% decrease in pigmentation- 6.8% improvement in wrinkles- Significant improvement in freckles and pigmentation",
+      "ingredients": "HYSSOP EXTRACT Rich in vitamins A, C, E, it helps skin by fighting microbes, reducing inflammation, promoting healing and regeneration, providing antioxidant protection, and acting as a natural astringent. VITA ACE COMPLEX Arencia’s signature ingredient. Extracted in high concentrations of vitamins C, B, and E, this complex maximizes skin conditioning by blending non-toxic, water-soluble, and lipid-soluble vitamins. VITAMIN B (RIBOFLAVIN) Helps prevent moisture loss from the skin epidermis, managing the skin's moisture barrier, and aids in managing pigmentation. VITAMIN E Enhances skin tissue elasticity, aiding in the generation of new skin cells. It helps maintain smooth and transparent skin texture.",
+      "main_image": "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/1_a3e19193-d8c1-4c44-aa91-080a0f4ef203.jpg?v=1752476465",
+      "additional_images": [
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/01_aac29e7b-037b-41d2-97bb-787bc903b326.jpg?v=1752476465",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/02_6d421442-efc6-4f74-87fc-e912ba2ab619.jpg?v=1752476465",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/03_51ccb291-e507-4017-a4be-48f00821f00e.jpg?v=1752476465",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/05_338482f1-49c4-443b-b183-48645299484e.jpg?v=1752476465"
+      ]
+    },
+    {
+      "name": "[Arencia] Holy Hyssop Serum 12 30ml (+FREE GIFT / Holy Hyssop Serum 4ML)",
+      "product_url": "https://moidaus.com/products/arencia-holy-hyssop-serum-12-30ml",
+      "category": "arencia",
+      "brand": "Arencia",
+      "vendor": "Arencia",
+      "scraped_at": "2025-09-11T12:43:38.019983",
+      "image_url": "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/12___01.jpg?v=1747900754",
+      "price": "$25.20",
+      "detailed_description": "Description\nBenefits 💚\nReduces Blemishes: Clinically proven to reduce blemishes, and freckles, promoting a clearer, more even complexion.Targets Hyperpigmentation: Effectively diminishes hyperpigmentation and prevents new discolorations from forming.Smooths Fine Lines: Visibly reduces the appearance of fine lines, enhancing skin's smoothness and texture.Promotes Glowy, Bouncy Skin: Rich in moisturizing ingredients that boost hydration levels, leaving skin looking glowy and feeling bouncy.Gentle Yet Effective: With a rich serum texture, it is suitable for all skin types, including sensitive skin, delivering powerful results without irritation.\nHow It's Made 🌿Our serum combines a potent 10% Niacinamide and 12% Vitamin ACE complex with deeply hydrating ingredients like hyaluronic acid and rice water. Meticulously formulated to balance efficacy and gentleness, it nourishes and hydrates the skin while targeting discoloration and signs of aging. Each ingredient is selected for its proven benefits to smooth, and rejuvenate the skin.",
+      "ingredients": "Water, Butylene Glycol, Dipropylene Glycol, Niacinamide, Propanediol, Glycerin, Arbutin, 1,2-Hexanediol, Methylpropanediol, Arginine, Carbomer, Dextrin, Ethylglycerin, Adenosine, Gardenia Florida Fruit Extract, Glyceryl Acrylate/Acrylic Acid Copolymer, Kojic Acid, PVM/MA Copolymer, Hyssopus Officinalis Extract, Sodium Hyaluronate, Linum Usitatissimum (Linseed) Seed Extract, Oryza Sativa (Rice) Extract, 3-O-Ethyl Ascorbic Acid, Sodium Ascorbyl Phosphate, Ascorbic Acid, Ascorbyl Glucoside, Tocopherol, Panthenol, Pyridoxine, Corchorus Olitorius Leaf Extract, Angelica Keiskei Extract, Nelumbo Nucifera Root Extract, Hibiscus Esculentus Fruit Extract, Dioscorea Japonica Root Extract, Hydrogenated Lecithin, Acetyl Hexapeptide-8, Copper Tripeptide-1, Ceramide NP, Glycosphingolipids, Palmitoyl Pentapeptide-4, Oligopeptide-1, Oligopeptide-2",
+      "main_image": "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/12___01.jpg?v=1747900754",
+      "additional_images": [
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/12___03.jpg?v=1747900754",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/22_a7e3b362-8718-4c35-9898-394066f2359b.jpg?v=1747900754",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/33_c8fda029-84aa-4d2a-b1e7-423cb0f10a21.jpg?v=1747900754",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/44_1b90b9a7-a402-4bb9-a234-1ef77b2d755a.jpg?v=1747900754",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/55_49e37a03-82c8-4611-ba8d-bda6bfca999a.jpg?v=1747900754",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/3_b0d81ab3-9c9e-484b-ab1a-f99bd675a402.jpg?v=1747900754"
+      ]
+    },
+    {
+      "name": "[Arencia] *renew* Fresh Green Rice Mochi Cleanser 120g",
+      "product_url": "https://moidaus.com/products/arencia-fresh-green-rice-mochi-cleanser-120g",
+      "category": "arencia",
+      "brand": "Arencia",
+      "vendor": "Arencia",
+      "scraped_at": "2025-09-11T12:43:50.784645",
+      "image_url": "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/5_651dd5cf-a610-4a82-b30b-9d0ed0b25433.jpg?v=1756944012",
+      "price": "$16.00",
+      "detailed_description": "Description\nA hydrating cleanser with a mochi-like soft texture that effectively cleanse while moisturizing skin. Contains witch hazel which is rich in vitamin a and vitamin c to brighten skin. Formulated with rice water to nourish skin and hyssop extract to calm skin. Kneading proceess of repeated pressing and beating preserves the natural ingredients' vitamins and minerals.",
+      "ingredients": "Glycerin, Water, Sodium Cocoyl Isethionate, Prunus Amygdalus Dulcis (Sweet Almond) Seed Meal, Sodium Cocoyl Glycinate, 1,2-Hexanediol, Coconut Acid, Sodium Methyl Cocoyl Taurate, Oryza Sativa (Rice) Powder, Fragrance, Kaolin, Sodium Isethionate, Camellia Sinensis Leaf Powder, Glyceryl Stearate, Hydroxypropyl Starch Phosphate, Xanthan Gum, Sodium Chloride, Dextrin, Ethylhexylglycerin, Gardenia Florida Fruit Extract, Camellia Sinensis Leaf Extract, Adansonia Digitata Fruit Extract, Artemisia Princeps Leaf Extract, Avena Sativa (Oat) Kernel Extract, Caulerpa Lentillifera Extract, Centella Asiatica Extract, Chamomilla Recutita (Matricaria) Flower Extract, Coffea Arabica (Coffee) Seed Extract, Eucalyptus Globulus Leaf Extract, Ficus Carica (Fig) Fruit Extract, Glycyrrhiza Uralensis (Licorice) Extract, Hamamelis Virginiana (Witch Hazel) Extract, Hyssopus Officinalis Extract, Lycium Chinense Fruit Extract, Melaleuca Alternifolia (Tea Tree) Extract, Nelumbo Nucifera Leaf Extract, Oryza Sativa (Rice) Extract, Panax Ginseng Root Extract, Portulaca Oleracea Extract, Saururus Chinensis Extract, Solanum Melongena (Eggplant) Fruit Extract",
+      "main_image": "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/5_651dd5cf-a610-4a82-b30b-9d0ed0b25433.jpg?v=1756944012",
+      "additional_images": [
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/1_475e322e-19b2-4fd6-b000-3f13f48444f0.webp?v=1756944012",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/2_8f598fd4-fed4-466b-9f83-fd39f9b23da9.webp?v=1756944012",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/3_59779833-3d21-4a6a-b343-3838f9027c70.webp?v=1756944012",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/4_96ec55a2-4a48-4657-8989-204ed61210cf.webp?v=1756944012",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/5_c0ee7f37-5cbc-4679-9dd0-aba0106e12ff.webp?v=1756944012",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/7_162ae333-65be-4830-a37b-1c5f72abe750.webp?v=1756944012",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/8_d7409881-1807-4108-a102-4f6faab737ab.webp?v=1756944012",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/65.webp?v=1756944012"
+      ]
+    },
+    {
+      "name": "[Arencia] Rice Mucin Glow Serum 30ml (+FREE GIFT / Holy Hyssop Serum 4ML)",
+      "product_url": "https://moidaus.com/products/arencia-rice-mucin-glow-serum-30ml",
+      "category": "arencia",
+      "brand": "Arencia",
+      "vendor": "Arencia",
+      "scraped_at": "2025-09-11T12:44:03.526951",
+      "image_url": "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/1_62bdc510-f86b-4051-82b9-7f7273b4f66a.webp?v=1750753130",
+      "price": "$25.20",
+      "detailed_description": "Description\nOvernight Glow Serum: Experience radiant, glowing skin with this dual-functional serum packed with nourishing ingredients.\nRice Glow Complex: Enriched with a proprietary blend of rice extracts to promote a luminous, even complexion.\nHyaluronic Acid: Hydrates and plumps the skin for a smoother, more youthful appearance.\nNiacinamide: Helps minimize pores, refine texture, and glow skin tone.\nCollagen: Supports skin elasticity and firmness for a revitalized, supple complexion.",
+      "ingredients": "Rice Ferment Filtrate (Sake), Water, 1, 2-Hexanediol, Glycerin, Niacinamide, Saccharomyces/Rice Ferment Filtrate, Carbomer, Hydrolyzed Collagen, Cetearyl Olivate, Tromethamine, Butylene Glycol, Methylpropanediol, Pentylene Glycol, Pullulan, Sorbitan Olivate, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Hyaluronic Acid, Caprylic/Capric Triglyceride, Oryza Sativa (Rice) Extract, Hydrogenated Lecithin, Polyacrylate, Garcinia Cambogia Fruit Extract, Adenosine, Polyglyceryl-10 Oleate, Polyglutamic Acid, Polyglyceryl-10 Stearate, Disodium EDTA, Xanthan Gum, Capryloyl Salicylic Acid, Polyglyceryl-4 Caprate, Malt Extract, Retinal, Panthenol, Kummerowia Striata Extract, Sodium Ascorbyl Phosphate, Tocopheryl Acetate, Cinchona Pubescens Bark Extract, Leptospermum Scoparium Leaf Extract, Dioscorea Japonica Root Extract, Beta-Glucan, Hydrolyzed Corn Starch, Glyceryl Linolenate, Glyceryl Arachidonate, Tranexamic Acid, Retinyl Palmitate, Biotin, Sucrose, Thiamine HCl, Folic Acid, Pyridoxine, Cyanocobalamin, Sodium Chondroitin Sulfate",
+      "main_image": "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/1_62bdc510-f86b-4051-82b9-7f7273b4f66a.webp?v=1750753130",
+      "additional_images": [
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/3_b7cfe24a-a008-4edb-ada8-d6c9698bf4f9.jpg?v=1750753130",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/6_c43baf87-f665-40d9-8859-c1136e1ef4fe.webp?v=1750753130",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/4_825a07b3-6408-42b4-bdad-253aec4634bb.jpg?v=1750753130",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/5_2dfb8939-99dd-427d-94fe-f491883ebdd5.jpg?v=1750753130"
+      ]
+    },
+    {
+      "name": "[Arencia] Rice Mucin Glow Serum 30 50ml (+FREE GIFT / Holy Hyssop Serum 4ML)",
+      "product_url": "https://moidaus.com/products/arencia-rice-mucin-glow-serum-30-50ml",
+      "category": "arencia",
+      "brand": "Arencia",
+      "vendor": "Arencia",
+      "scraped_at": "2025-09-11T12:44:16.352078",
+      "image_url": "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/1_2fd82553-7293-4d9c-b79d-5736a67432b9.jpg?v=1752476487",
+      "price": "$31.50",
+      "detailed_description": "Description\n\nThis chewy moisture luminous serum, with a pudding-like formula, creates a radiant glassy glow from within the skin.\nThe rice pudding-like, firm formula holds moisture tightly, providing sufficient nourishment and moisture, delivering efficacy deep into the skin. \nCompleted with a formula that provides comfort to the skin, ensuring safe use for sensitive skin. \nContains 30% Rice Glow Complex, which is a blend of active ingredients from various types of rice, including Oryza Sativa (Rice), Brown Rice, and Black Oryza Sativa (Rice), helping with skin brightening and improving texture and condition. Proteins, essential amino acids, and vitamins in rice supply nutrients to tired skin, while fermented Oryza Sativa (Rice) filtrate reduces substances that cause spots and blemishes. \nNiacinamide helps reduce pores and wrinkles, and reduces inflammation to improve overall skin health. \nHydrolyzed collagen is modified to allow more than 90% absorption by the skin, and its high content of the amino acid “serine” helps improve wrinkles.",
+      "ingredients": "Rice Ferment Filtrate (Sake) (487,889ppm), Water, 1,2-Hexanediol, Glycerin, Niacinamide, Saccharomyces/Rice Ferment Filtrate (18,000ppm), Carbomer, Hydrolyzed Collagen, Cetearyl Olivate, Tromethamine, Butylene Glycol, Methylpropanediol, Pentylene Glycol, Pullulan, Sorbitan Olivate, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Hyaluronic Acid, Caprylic/Capric Triglyceride, Oryza Sativa (Rice) Extract (750ppm), Hydrogenated Lecithin, Sodium Polyacrylate, Garcinia Cambogia Fruit Extract, Adenosine, Polyglyceryl-10 Oleate, Polyglutamic Acid, Polyglyceryl-10 Stearate, Disodium EDTA, Xanthan Gum, Capryloyl Salicylic Acid, Polyglyceryl-4 Caprate, Malt Extract, Retinal, Panthenol, Kummerowia Striata Extract, Sodium Ascorbyl Phosphate, Tocopheryl Acetate, Cinchona Pubescens Bark Extract, Leptospermum Scoparium Leaf Extract, Dioscorea Japonica Root Extract (5ppm), Beta-Glucan, Hydrolyzed Corn Starch, Glyceryl Linolenate, Glyceryl Arachidonate, Tranexamic Acid, Retinyl Palmitate, Biotin, Sucrose, Thiamine HCl, Folic Acid, Pyridoxine, Cyanocobalamin, Sodium Chondroitin Sulfate",
+      "main_image": "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/1_2fd82553-7293-4d9c-b79d-5736a67432b9.jpg?v=1752476487",
+      "additional_images": [
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/2_b1c2a0d9-f0de-4559-95d8-1573f43166d5.jpg?v=1752476487",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/3_b5f244c4-1670-4202-9198-10089439e21e.jpg?v=1752476487",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/4_03655bb4-a56f-464e-941e-44364704463c.jpg?v=1752476487",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/5_49a59c70-d501-4b35-a203-d86280a45610.jpg?v=1752476487",
+        "https://cdn.shopify.com/s/files/1/0459/7779/6766/files/6_24eb0d5f-be0c-4f56-a2dc-9a21893cbb27.jpg?v=1752476487"
       ]
     }
   ]
