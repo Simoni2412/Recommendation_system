@@ -12,7 +12,10 @@ RANKED_SKINCARE_INGREDIENTS = {
         "Propolis",
         "Centella Asiatica",
         "Mugwort (Artemisia)",
-        "Willow Bark Extract"
+        "Willow Bark Extract",
+        "Bee Venom",
+        "Hamamelis Virginiana (Witch Hazel)",
+        "Cucumis Sativus (Cucumber) Extract"
     ],
     "hyperpigmentation": [
         "Retinoids (Retinol, Retinal, Tretinoin)",
@@ -27,7 +30,10 @@ RANKED_SKINCARE_INGREDIENTS = {
         "Mandelic Acid",
         "Bearberry Extract",
         "Rice Extract",
-        "Galactomyces Ferment Filtrate"
+        "Galactomyces Ferment Filtrate",
+        "Punica Granatum (Pomegranate) Extract",
+        "Oryza Sativa (Rice) Bran Extract",
+        "Black Rice Extract"
     ],
     "dryness": [
         "Ceramides",
@@ -42,7 +48,11 @@ RANKED_SKINCARE_INGREDIENTS = {
         "Royal Jelly",
         "Noni Extract",
         "Jojoba Oil",
-        "Avocado Oil"
+        "Avocado Oil",
+        "Honey Extract",
+        "Aloe Barbadensis Leaf Water",
+        "Black Rice Extract",
+        "Tremella Mushroom Extract"
     ],
     "oily skin": [
         "Niacinamide",
@@ -52,7 +62,9 @@ RANKED_SKINCARE_INGREDIENTS = {
         "L-Carnitine",
         "Green Tea Extract",
         "Tea Tree Oil",
-        "Witch Hazel"
+        "Witch Hazel",
+        "Lentil Seed Extract",
+        "Saccharum Officinarum (Sugarcane) Extract"
     ],
     "sensitivity": [
         "Centella Asiatica",
@@ -64,7 +76,11 @@ RANKED_SKINCARE_INGREDIENTS = {
         "Green Tea Extract",
         "Aloe Vera",
         "Mugwort (Artemisia)",
-        "Heartleaf (Houttuynia Cordata)"
+        "Heartleaf (Houttuynia Cordata)",
+        "Chamomilla Recutita (Matricaria) Flower Extract",
+        "Licorice Root Extract",
+        "Cucumber Extract",
+        "Saponaria Officinalis Extract"
     ],
     "anti-aging": [
         "Retinoids (Retinol, Retinal, Bakuchiol)",
@@ -77,7 +93,11 @@ RANKED_SKINCARE_INGREDIENTS = {
         "Adenosine",
         "Ginseng Extract",
         "Snail Mucin",
-        "Alpha Lipoic Acid"
+        "Alpha Lipoic Acid",
+        "Copper Peptides",
+        "Resveratrol",
+        "Punica Granatum (Pomegranate) Extract",
+        "Black Rice Extract"
     ],
     "dullness": [
         "Vitamin C",
@@ -87,7 +107,10 @@ RANKED_SKINCARE_INGREDIENTS = {
         "Fermented Ingredients (Galactomyces, Bifida)",
         "Licorice Root",
         "Rice Bran Extract",
-        "Pearl Extract"
+        "Pearl Extract",
+        "Punica Granatum (Pomegranate) Extract",
+        "Ginseng Extract",
+        "Black Rice Extract"
     ],
     "blackheads": [
         "Salicylic Acid",
@@ -96,7 +119,8 @@ RANKED_SKINCARE_INGREDIENTS = {
         "Lactic Acid",
         "PHA (Polyhydroxy Acids)",
         "Enzymes (Papain, Bromelain)",
-        "Willow Bark Extract"
+        "Willow Bark Extract",
+        "Betaine Salicylate"
     ],
     "dehydration": [
         "Hyaluronic Acid",
@@ -107,7 +131,9 @@ RANKED_SKINCARE_INGREDIENTS = {
         "Tremella Mushroom Extract",
         "Seaweed Extract",
         "Propolis",
-        "Noni Extract"
+        "Noni Extract",
+        "Rice Extract",
+        "Panthenol"
     ],
     "redness/rosacea": [
         "Azelaic Acid",
@@ -118,7 +144,8 @@ RANKED_SKINCARE_INGREDIENTS = {
         "Bisabolol",
         "Heartleaf (Houttuynia Cordata)",
         "Beta-Glucan",
-        "Mugwort (Artemisia)"
+        "Mugwort (Artemisia)",
+        "Chamomile Extract"
     ],
     "dark circles": [
         "Retinal",
@@ -138,7 +165,8 @@ RANKED_SKINCARE_INGREDIENTS = {
         "Retinol",
         "Lactic Acid",
         "PHA (Polyhydroxy Acids)",
-        "Enzymes (Papain, Bromelain)"
+        "Enzymes (Papain, Bromelain)",
+        "Salicylic Acid"
     ],
     "sun damage": [
         "Vitamin C",
@@ -147,7 +175,9 @@ RANKED_SKINCARE_INGREDIENTS = {
         "Resveratrol",
         "Ferulic Acid",
         "Green Tea Extract",
-        "Sunscreen Filters (Zinc Oxide, Titanium Dioxide)"
+        "Sunscreen Filters (Zinc Oxide, Titanium Dioxide)",
+        "Tocopherol (Vitamin E)",
+        "Black Rice Extract"
     ],
     "pores": [
         "Niacinamide",
@@ -155,7 +185,8 @@ RANKED_SKINCARE_INGREDIENTS = {
         "Clay",
         "Retinal",
         "PHA",
-        "Witch Hazel"
+        "Witch Hazel",
+        "Tea Tree Oil"
     ],
     "sun protection": [
         "Zinc Oxide",

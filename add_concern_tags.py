@@ -148,7 +148,7 @@ def add_concern_tags_to_products(json_file_path: str, output_file_path: str = No
 def main():
     """Main function to run the script."""
     input_file = "output_moida_batched.json"
-    output_file = "new_with_concerns.json"
+    output_file = "new_moida_with_concerns.json"
     
     try:
         add_concern_tags_to_products(input_file, output_file)
